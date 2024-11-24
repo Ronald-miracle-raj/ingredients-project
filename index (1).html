@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Recipe Finder</h1>
+            <p>Discover recipes based on ingredients you have</p>
+        </header>
+
+        <!-- Ingredient Input and Search Button -->
+        <section class="input-container">
+            <input type="text" id="ingredients" placeholder="Enter ingredients (e.g. chicken, garlic, onion)">
+            <button onclick="findRecipe()">Find Recipe</button>
+        </section>
+
+        <!-- Dynamic Recipe Display -->
+        <section id="recipe">
+            <!-- Recipe results will be displayed here -->
+        </section>
+
+        <!-- Recipe Book (Static) -->
+        <section id="recipeBook">
+            <h2>Recipe Book</h2>
+            <div class="recipe-container" id="recipeBookContainer">
+                <!-- Static recipes will be displayed here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
